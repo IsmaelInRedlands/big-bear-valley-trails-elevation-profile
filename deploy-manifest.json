@@ -1,0 +1,18 @@
+{
+  "kind": "arcgis-nova-deployable-app",
+  "version": "0.1",
+  "generatedAt": "2026-10-30T06:46:36.339Z",
+  "title": "Big Bear Valley Trails • Elevation Profile",
+  "authMode": "oauth",
+  "entry": "index.html",
+  "sourceAppPath": "outputs/apps/2026-10-30T06-46-00-8020640e-2d09-45ab-9ad2-40779f9ca983/index.html",
+  "files": {
+    "app": "app.json",
+    "map": "map.json",
+    "runtime": "app.js",
+    "auth": "standalone-auth.js"
+  },
+  "portalUrl": "https://www.arcgis.com",
+  "appId": "CSQXgWj32M6IGzIy",
+  "deploymentUrl": "https://ismaelinredlands.github.io/big-bear-valley-trails-elevation-profile/"
+}

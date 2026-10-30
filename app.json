@@ -1,0 +1,204 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-30T06:46:00.699Z",
+  "item": {
+    "title": "Big Bear Valley Trails • Elevation Profile"
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "map",
+    "showHeader": false,
+    "theme": {
+      "mode": "light",
+      "accent": "default"
+    },
+    "layout": {
+      "footer": {
+        "hidden": false,
+        "height": "clamp(180px, 28vh, 230px)",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "trail-elevation-profile"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "trail-elevation-profile",
+        "label": "Trail elevation profile with sampled hover readout",
+        "bundlePath": "./runtime/behaviors/trail-elevation-profile-7bbcd306fc80ce64.js",
+        "sourceSha256": "7bbcd306fc80ce64b34b5e85488c8ae2c8ae348257762f818b14cbb7fc0f6ecd",
+        "modulePaths": [
+          "esri/Graphic",
+          "esri/core/reactiveUtils",
+          "esri/geometry/Point",
+          "esri/layers/ElevationLayer",
+          "esri/widgets/ElevationProfile"
+        ],
+        "config": {
+          "elevationItemId": "7029fb60158543ad845c7e1527af11e4"
+        },
+        "mounts": [
+          "trail-elevation-profile"
+        ],
+        "ownedLayerIds": [
+          "elevation-hover-marker"
+        ],
+        "interactions": [
+          {
+            "id": "sugarloaf-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_1992"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "skyline-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_1172"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "john-bull-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_9183"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "holcomb-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_1164"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "heartbreak-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_5808"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "grout-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_6933"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "gold-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_2890"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "fish-creek-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "gpx_7698"
+            },
+            "actionId": "profile-selected-trail"
+          },
+          {
+            "id": "alltrails-elevation",
+            "trigger": {
+              "type": "feature-click",
+              "layerId": "alltrails_435"
+            },
+            "actionId": "profile-selected-trail"
+          }
+        ],
+        "installedAt": "2026-10-30T07:03:54.513Z"
+      },
+      {
+        "id": "profile-panel-screen-fit",
+        "label": "Fit elevation chart within the screen",
+        "bundlePath": "./runtime/behaviors/profile-panel-screen-fit-01dc918d8b083358.js",
+        "sourceSha256": "01dc918d8b0833589122705363f0986d21d634be2d08fbbbae14d721e1b23e32",
+        "modulePaths": [],
+        "config": {},
+        "mounts": [
+          "trail-elevation-profile"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-30T07:06:34.998Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "8020640e-2d09-45ab-9ad2-40779f9ca983",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-f67376d7-348e-4ccb-bcae-a1634fec788a",
+      "mapName": "Big Bear Valley Trails Foundation Map",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-30T06:46:36.339Z",
+      "sourceItem": {
+        "itemId": "81a7cb575bd9466ca419d5e88de4b8c2",
+        "portalUrl": "https://www.arcgis.com"
+      }
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": [],
+    "notes": [
+      "Opened from portal item 81a7cb575bd9466ca419d5e88de4b8c2 at https://www.arcgis.com/sharing/rest."
+    ]
+  }
+}
